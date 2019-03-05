@@ -9,6 +9,7 @@ ftp.retrlines('LIST')
 def uploadFile(x):
  filename = x #replace with your file in your home folder
  ftp.storbinary('STOR '+filename, open(filename, 'rb'))
+ ftp.retrlines('LIST')
  ftp.quit()
 
-uploadFile('TestFTP')
+uploadFile('TestFTP.txt')
