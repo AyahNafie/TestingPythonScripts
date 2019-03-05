@@ -18,5 +18,5 @@ def downloadFile(y):
  ftp.quit()
  localfile.close()
 
-uploadFile('TestFTP.txt')
+#uploadFile('TestFTP.txt')
 downloadFile('demo.wav')
