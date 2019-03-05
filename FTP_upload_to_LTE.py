@@ -11,4 +11,4 @@ def uploadFile(x):
  ftp.storbinary('STOR '+filename, open(filename, 'rb'))
  ftp.quit()
 
-uploadFile('TestFTP.txt')
+uploadFile('TestFTP')
